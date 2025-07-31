@@ -1,122 +1,74 @@
-# #a portal to search food items using list
+my_dict = {'puttu':10, 'porotta':20, 'appam':15,'chappathi':12}
+print(my_dict)
 
-# foods = [ ["biriyani","thalassery","favorite for most people"],
-#          ["mandhi","alfahm-mandhi","choosen by all the youths"],
-#          ["porotta and beef","kozhikoden","emotion for everyone"]]
+# #add to dictionary
+# my_dict['idiyappam'] = 25
+# print(my_dict)
 
-# print("Welcome to the official foods page")
+# #add multiple items to dictionary
+# my_dict.update({'dosa':10, 'pathiri':5})
+# print(my_dict)
 
-# #first display options
-# while True:
-#     print("Enter 1 to check food items")
-#     print("Enter 2 to add new food items")
-#     print("Enter 3 to exit")
-#     choise = input("Enter your choise:")
+# #remove from dictionary
+# del my_dict['appam']
+# print(my_dict)
 
-# #when option selected
-#     if choise == "1":
-#         food_name = input("enter a food item:")
-#         found = False
-#         for food in foods:
-#             if food[0] == food_name:
-#                 print(f"Details of {food[0]}")
-#                 print(f"most famous {food[0]} is {food[1]}")
-#                 print(food[2])
-#                 found = True
-#                 break
-#         if not found:
-#             print("food not found in list")
+# #update existing keyvalue in dictionary
+# my_dict['chappathi'] = 18
+# print(my_dict)
 
-#     elif choise == "2":
-#         new_food = []
-#         new_food.append(input("Enter the name of food:"))
-#         new_food.append(input("Enter the most famous:"))
-#         new_food.append(input("Enter a quote for it:"))
-#         foods.append(new_food)
-#         print("New details added successfully")
+# #remove using pop
+# my_dict.pop('puttu')
+# print(my_dict)
 
-#     elif choise == "3":
-#         print("goodbye!!")
-#         break
+# #remove using popitem
+# my_dict.popitem()
+# print(my_dict)
 
-#     else:
-#         print("Invalid choise, choose 1,2 or 3")    
-# --------------------------------------------------------------------------------------    
+# #clear entire dictionary
+# my_dict.clear()
+# print(my_dict)
 
-# celsius_temps = [22, 25, 30, 18, 20]
-# print(celsius_temps)
-# fahrenheit_temps = [(temp * 9/5) + 32 for temp in celsius_temps]
-# print(fahrenheit_temps)
-#--------------------------------------------------------------------------------------------
+# #avoid error while removing non key
+# b = my_dict.pop('dosa','not found')
+# print(b)
+# print(my_dict)
 
-menu = {'Appam': 40, 'Puttu': 35, 'Dosa': 50, 'Idiyappam': 40, 'Parotta': 30}
+# #to loop through dictionary and print key value pair line by line
+# for key, value in my_dict.items():
+#     print(f"{key} = {value}")
 
 
-# Function to add a new food item to the menu
-def add_item():
-    item_name = input("Enter the name of the new food item: ")
-    item_price = float(input("Enter the price of the new food item: "))
-    menu[item_name] = item_price
 
 
-# Function to display the current menu
-def display_menu():
-    print("Current Menu:")
-    for item, price in menu.items():
-        print(item + " - " + str(price))
+#--------------------------------------------------------
 
+my_list = ['apple','orange','mango',10,20,30]
+print(my_list)
 
-# Function to search for a food item and display its price
-def search_item():
-    item_name = input("Enter the name of the food item to search for: ")
-    if item_name in menu:
-        print("The price of " + item_name + " is " + str(menu[item_name]))
-    else:
-        print(item_name + " is not on the menu.")
+# #to add to a list
+# my_list.append('grape')
+# print(my_list)
 
+# #insert item at a specified index
+# my_list.insert(1,'40')
+# print(my_list)
 
-# Function to remove a food item from the menu
-def remove_item():
-    item_name = input("Enter the name of the food item to remove: ")
-    if item_name in menu:
-        del menu[item_name]
-        print(item_name + " has been removed from the menu.")
-    else:
-        print(item_name + " is not on the menu.")
+# #adding multiple items
+# my_list.extend(['kiwi',50])
+# print(my_list)
 
+# #removing a specified item
+# my_list.remove('orange')
+# print(my_list)
 
-# Function to calculate the total revenue earned
-def calculate_revenue():
-    total_revenue = 0
-    for item, price in menu.items():
-        quantity = int(input("How many " + item + "s were sold? "))
-        total_revenue += price * quantity
-    print("Total revenue: $" + str(total_revenue))
+# #removing last item
+# my_list.pop()
+# print(my_list)
 
+# #to find length of a list
+# print(len(my_list))
 
-# Main function to run the program
-while True:
-    print("Please choose an option:")
-    print("1. Add a new food item to the menu")
-    print("2. Display the current menu")
-    print("3. Search for a food item and display its price")
-    print("4. Remove a food item from the menu")
-    print("5. Calculate the total revenue earned")
-    print("6. Exit the program")
-    choice = input()
-
-    if choice == "1":
-        add_item()
-    elif choice == "2":
-        display_menu()
-    elif choice == "3":
-        search_item()
-    elif choice == "4":
-        remove_item()
-    elif choice == "5":
-        calculate_revenue()
-    elif choice == "6":
-        print("Goodbye!")
-        break
-    else:
-        print("Invalid choice. Please enter a number from 1 to 6.")
+# #to print every items line by line
+# for n in my_list:
+#     print(n)
