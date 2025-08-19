@@ -1,5 +1,5 @@
-my_dict = {'puttu':10, 'porotta':20, 'appam':15,'chappathi':12}
-print(my_dict)
+# my_dict = {'puttu':10, 'porotta':20, 'appam':15,'chappathi':12}
+# print(my_dict)
 
 # #add to dictionary
 # my_dict['idiyappam'] = 25
@@ -39,12 +39,10 @@ print(my_dict)
 #     print(f"{key} = {value}")
 
 
+# --------------------------------------------------------
 
-
-#--------------------------------------------------------
-
-my_list = ['apple','orange','mango',10,20,30]
-print(my_list)
+# my_list = ['apple','orange','mango',10,20,30]
+# print(my_list)
 
 # #to add to a list
 # my_list.append('grape')
@@ -72,3 +70,21 @@ print(my_list)
 # #to print every items line by line
 # for n in my_list:
 #     print(n)
+
+# a = [1, 2, 3, 4, 8, 7, 11, 25, 15, 14]
+# prime_numbers = []
+# non_prime = []
+
+# for i in a:
+#     if i > 1:
+#         for x in range(2, i):
+#             if i % x == 0:
+#                 non_prime.append(i)
+#                 break
+#         else:
+#             prime_numbers.append(i)
+
+
+# print(f'prime numbers = {prime_numbers}')
+# print(f'non primes = {non_prime}')
+

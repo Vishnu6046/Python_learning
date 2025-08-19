@@ -131,3 +131,24 @@
 # p1.remove_skill('python')
 # p1.remove_skill('java')
 # p1.show_skills()
+
+# choices = ('r','p','s')
+
+# while True:
+#     choice_1 = input('enter choice one: ')
+#     choice_2 = input('enter choice two: ')
+#     if choice_1 not in choices:
+#         print(f'{choice_1} is invalid choice')
+#         continue
+#     elif choice_2 not in choices:
+#         print(f'{choice_2} is invalid choice')
+#         continue   
+
+#     if choice_1 == choice_2:
+#         print('Tie')
+#     elif (choice_1 == 'r' and choice_2 == 's') or (choice_1 == 'p' and choice_2 == 'r') or (choice_1 == 's' and choice_2 == 'p'):
+#         print(f'{choice_1} wins')
+#     elif (choice_2 == 'r' and choice_1 == 's') or (choice_2 == 'p' and choice_1 == 'r') or (choice_2 == 's' and choice_1 == 'p'):
+#         print(f'{choice_2} wins')   
+#     break        
+           
